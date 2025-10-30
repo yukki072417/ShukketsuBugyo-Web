@@ -1,0 +1,66 @@
+.gread-input{
+    max-width: 100px;
+}
+
+.input-items{
+    display: flex;
+    justify-content: left;
+}
+
+.display-gread{
+    margin-left: 15px;
+}
+
+.input-items#alphabets-selecter{
+    display: flex;
+    justify-content: left;
+}
+
+.sort-selecter {
+    float: right;
+    width: 150px;
+
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+#gread-up, #gread-down{
+    margin-left:  10px;
+    margin-right: 10px;
+}
+
+.class-settings-input{
+    margin-left: 10px;
+    width:  60px;
+    height: 40px;
+    
+    text-align: center;
+}
+
+.class-components{
+    display: flex;
+}
+
+.class-labels{
+    margin-right: 7px;
+    margin-left:  7px;
+}
+
+.classe-action-button{
+    width: 75px;
+    margin-left:  5px;
+    margin-right: 5px;
+}
+
+.actions{
+    width: 200px;
+}
+
+.class-labels{
+    font-size: 18px;
+}
+
+.display-grade{
+    margin-left: 10px;
+    width: 75px;
+}

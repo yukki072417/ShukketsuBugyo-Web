@@ -1,0 +1,163 @@
+.main {
+    display: block;
+    width: 100%;
+}
+
+.timetable-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.lessons-panel {
+    min-width: 200px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+}
+
+.lessons-list {
+    min-height: 100px;
+    padding: 10px;
+    border: 2px dashed #dee2e6;
+    border-radius: 4px;
+}
+
+.lesson-item {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: grab;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+.lesson-item:hover {
+    background-color: #0056b3;
+}
+
+.lesson-item:active {
+    cursor: grabbing;
+}
+
+.lesson-item.dragging {
+    opacity: 0.5;
+    transform: rotate(5deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.table-container {
+    flex: 1;
+}
+
+.table-header {
+    width: 120px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+#period {
+    width: 80px;
+}
+
+.table-data {
+    border: 1px solid #dee2e6;
+    padding: 0;
+    height: 60px;
+    vertical-align: middle;
+}
+
+.period-cell {
+    text-align: center;
+    font-weight: bold;
+    background-color: #f8f9fa;
+    padding: 8px;
+}
+
+.timetable-cell {
+    min-height: 58px;
+    width: 100%;
+    min-width: 125px;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 4px;
+}
+
+.timetable-cell.dragging-over {
+    background-color: #e3f2fd;
+    border: 2px dashed #2196f3;
+}
+
+.lessons-in-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+.lesson-in-cell {
+    background-color: #28a745;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: grab;
+    user-select: none;
+    text-align: center;
+    font-size: 11px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lesson-in-cell:hover {
+    background-color: #218838;
+}
+
+.lesson-in-cell:active {
+    cursor: grabbing;
+}
+
+.lesson-in-cell.dragging {
+    opacity: 0.5;
+    transform: rotate(5deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.empty-cell {
+    color: #6c757d;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+}
+
+.selected-class-info {
+    background-color: #e9ecef;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #495057;
+}
+
+.lessons-panel .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+.lessons-panel .alert {
+    font-size: 12px;
+    padding: 8px;
+}

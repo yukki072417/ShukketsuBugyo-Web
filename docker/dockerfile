@@ -1,0 +1,7 @@
+FROM node:20
+WORKDIR /app
+COPY ./back-end /app
+COPY ./db /app/db
+
+RUN npm install
+RUN cd /app/db && npm install

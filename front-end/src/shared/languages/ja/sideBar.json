@@ -1,0 +1,8 @@
+{
+    "dashboard_label": "ダッシュボード",
+    "timetable_label": "時間割設定",
+    "lessons_label": "授業設定",
+    "school_settings": "学校設定",
+    "attendance_label": "出席情報一覧",
+    "logout": "ログアウト"
+}

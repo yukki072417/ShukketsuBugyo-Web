@@ -1,0 +1,59 @@
+services:
+  mysql:
+    container_name: db-prod
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: SHUKKETSU_BUGYO
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ../db/sql/conf.d:/etc/mysql/conf.d
+    networks:
+      - backend-network
+
+  app-server:
+    container_name: app-server-prod
+    build:
+      context: ..
+      dockerfile: docker/dockerfile.app
+    restart: always
+    environment:
+      NODE_ENV: production
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: SHUKKETSU_BUGYO
+    volumes:
+      - ../secrets:/app/secrets:ro
+      - ../certs:/app/certs:ro
+    networks:
+      - backend-network
+      - frontend-network
+    depends_on:
+      - mysql
+
+  web-server:
+    container_name: web-server-prod
+    build:
+      context: ..
+      dockerfile: docker/dockerfile.web
+    restart: always
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - ../certs:/etc/nginx/certs:ro
+      - ../configs/nginx.prod.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - frontend-network
+    depends_on:
+      - app-server
+
+networks:
+  backend-network:
+    driver: bridge
+    internal: true
+  frontend-network:
+    driver: bridge
+
+volumes:
+  mysql_data:

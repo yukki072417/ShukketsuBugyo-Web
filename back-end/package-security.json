@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "audit": "npm audit --audit-level moderate",
+    "audit-fix": "npm audit fix",
+    "security-check": "npm run audit && npm outdated"
+  },
+  "dependencies": {
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.7.0",
+    "csurf": "^1.11.0",
+    "express-validator": "^6.15.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "tenant_id_label": "学校ID",
+  "teacher_id_label": "ユーザーID",
+  "password_label": "パスワード",
+  "submit_button": "ログイン",
+  "login_failed": "ログインに失敗しました\nパスワード, IDが間違えているか、ユーザーが存在しません"
+}

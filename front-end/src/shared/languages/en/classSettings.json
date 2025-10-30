@@ -1,0 +1,22 @@
+{
+  "title": "Class Settings",
+  "create_class": "Create Class",
+  "modal_title": "Class Settings",
+  "homeroom_teacher": "Homeroom Teacher",
+  "select_placeholder": "Please select",
+  "manager": " (Manager)",
+  "grade": "Grade",
+  "class": "Class",
+  "number_order": "Number Order",
+  "alphabet_order": "Alphabet Order",
+  "free_input": "Free Input",
+  "class_placeholder": "Enter class",
+  "create_button": "Create Class",
+  "update_button": "Update Class",
+  "delete_confirm": "Are you sure you want to delete this class?",
+  "delete_failed": "Failed to delete",
+  "teacher_id": "Teacher ID",
+  "actions": "Actions",
+  "delete": "Delete",
+  "edit": "Edit"
+}

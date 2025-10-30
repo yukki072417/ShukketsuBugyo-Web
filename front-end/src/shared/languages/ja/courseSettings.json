@@ -1,0 +1,20 @@
+{
+  "title": "コース設定",
+  "add_course": "コースを追加",
+  "no_courses": "コースがありません",
+  "actions": "操作",
+  "edit": "編集",
+  "delete": "削除",
+  "course_name_placeholder": "コース名",
+  "course_name_en_placeholder": "コース名（英語）",
+  "create_modal_title": "新規追加",
+  "edit_modal_title": "コースを編集",
+  "edit_modal_course_id": "コースID",
+  "edit_modal_course_name": "コース名",
+  "edit_modal_course_name_en": "コース名（英語）",
+  "edit_modal_close": "閉じる",
+  "edit_modal_save": "保存",
+  "edit_modal_delete": "削除",
+  "edit_modal_empty": "空の値は設定できません",
+  "edit_modal_duplicate": "既存のコースと同じ名前やIDは設定できません"
+}

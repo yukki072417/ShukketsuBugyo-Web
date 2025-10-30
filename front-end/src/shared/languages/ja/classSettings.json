@@ -1,0 +1,22 @@
+{
+  "title": "教室設定",
+  "create_class": "教室を作成",
+  "modal_title": "教室設定",
+  "homeroom_teacher": "担任",
+  "select_placeholder": "選択してください",
+  "manager": " (管理者)",
+  "grade": "学年",
+  "class": "組",
+  "number_order": "数字順",
+  "alphabet_order": "アルファベット順",
+  "free_input": "自由入力",
+  "class_placeholder": "組を入力",
+  "create_button": "教室を作成",
+  "update_button": "教室を更新",
+  "delete_confirm": "教室を削除しますか？",
+  "delete_failed": "削除に失敗しました",
+  "teacher_id": "担任ID",
+  "actions": "操作",
+  "delete": "削除",
+  "edit": "編集"
+}

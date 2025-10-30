@@ -1,0 +1,33 @@
+.admin-login {
+    margin: auto;
+    margin-top: 10vh;
+    padding: 5vw;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    display: block;
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: 200px;
+    height: 45px;
+    font-size: 1rem;
+}
+
+.form-items {
+    margin-top: 10px;
+}
+
+/* タブレット以上の画面幅 */
+@media screen and (min-width: 768px) {
+    .admin-login {
+        max-width: 500px;
+        padding: 40px;
+    }
+
+    .submit-button {
+        height: 50px;
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,26 @@
+.school-settings{
+    display: flex;
+}
+.school-settings-list{
+    min-width: 310px;
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+/* Responsive layout */
+@media (max-width: 992px) {
+  .school-settings{
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .school-settings{
+    flex-direction: column;
+  }
+  .school-settings-list{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "course_settings_title": "コース設定",
+    "teacher_settings": "教師設定（管理者のみ）",
+    "course_settings": "コース設定",
+    "period_settings": "授業時間設定",
+    "student_settings": "生徒設定",
+    "edit_modal_title": "コース編集",
+    "edit_modal_course_id": "コースID",
+    "edit_modal_course_name": "コース名",
+    "edit_modal_course_name_en": "コース名（英語表記）",
+    "edit_modal_close": "閉じる",
+    "edit_modal_save": "保存",
+    "edit_modal_empty": "空欄は設定できません",
+    "edit_modal_duplicate": "同じコース名またはコースIDは設定できません",
+    "no_courses": "コースがありません",
+    "add_course": "コースを追加",
+    "edit_modal_delete": "削除",
+    "class_settings": "教室設定"
+}

@@ -1,0 +1,19 @@
+{
+    "title": "時間割設定",
+    "classes": "教室",
+    "select_class": "教室を選択",
+    "unselected_info": "時間割を選択してください",
+    "fillter_by_grade": "学年で絞り込み",
+    "all_grades": "全学年",
+    "lesson_list": "授業",
+    "delete_area": "削除エリア",
+    "enrollment_area": "履修登録エリア",
+    "period": "時間目",
+    "mon": "月",
+    "tue": "火",
+    "wed": "水",
+    "thr": "木",
+    "fri": "金",
+    "sat": "土",
+    "sun": "日"
+}

@@ -1,0 +1,1 @@
+// Types moved to shared/utils/type.ts

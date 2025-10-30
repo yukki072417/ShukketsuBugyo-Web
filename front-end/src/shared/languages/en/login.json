@@ -1,0 +1,7 @@
+{
+  "tenant_id_label": "School ID",
+  "teacher_id_label": "User ID",
+  "password_label": "Password",
+  "submit_button": "Login",
+  "login_failed": "Login failed. Your ID or password may be incorrect.\nIt's also possible the user does not exist."
+}

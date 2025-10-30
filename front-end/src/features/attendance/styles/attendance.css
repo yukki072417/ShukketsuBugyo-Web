@@ -1,0 +1,131 @@
+.classes{
+    margin: auto;
+    width: 750px;
+}
+
+.attendance-container {
+  width: 1000px;
+  padding: 20px;
+  margin-left: 15%;
+}
+
+.class-selector {
+  margin-bottom: 20px;
+}
+
+.class-selector select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.timetable table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.timetable th,
+.timetable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.timetable th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.time-slot {
+  background-color: #f9f9f9;
+  font-size: 12px;
+  width: 100px;
+}
+
+.subject-cell {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.subject-cell.has-subject:hover {
+  background-color: #e3f2fd;
+}
+
+.subject-cell.empty {
+  background-color: #fafafa;
+  cursor: default;
+}
+
+.subject-item {
+  padding: 2px 4px;
+  margin: 1px 0;
+  border-radius: 3px;
+  background-color: #e8f4fd;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.subject-item:hover {
+  background-color: #d1e7dd;
+}
+
+.attendance-details {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.attendance-details h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.student-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-list th,
+.student-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.student-list th {
+  background-color: #f5f5f5;
+}
+
+.badge {
+  max-width: 75px;
+}
+
+.attendance-title{
+  font-size: 28px;
+}
+
+.attendance-table {
+  height: 50px;
+  min-width: 60px;
+  max-width: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  .attendance-title{
+    font-size: 22px;
+  }
+
+  
+}
+
+.status-0 { color: #f44336; } /* 欠席 */
+.status-1 { color: #4caf50; } /* 出席 */
+.status-2 { color: #ff9800; } /* 遅刻 */
+.status-3 { color: #2196f3; } /* 早退 */
+.status-4 { color: #9c27b0; } /* 出席停止 */
+.status-5 { color: #2196f3; } /* 公欠 */
+.status-6 { color: #607d8b; } /* その他 */

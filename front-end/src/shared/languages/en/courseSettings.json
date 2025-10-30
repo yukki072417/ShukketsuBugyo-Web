@@ -1,0 +1,20 @@
+{
+  "title": "Course Settings",
+  "add_course": "Add Course",
+  "no_courses": "No courses",
+  "actions": "Actions",
+  "edit": "Edit",
+  "delete": "Delete",
+  "course_name_placeholder": "Course name",
+  "course_name_en_placeholder": "Course English name",
+  "create_modal_title": "New Course",
+  "edit_modal_title": "Edit course",
+  "edit_modal_course_id": "Course ID",
+  "edit_modal_course_name": "Course Name",
+  "edit_modal_course_name_en": "Course Name (English)",
+  "edit_modal_close": "Close",
+  "edit_modal_save": "Save",
+  "edit_modal_delete": "Delete",
+  "edit_modal_empty": "You cannot set empty values",
+  "edit_modal_duplicate": "You cannot set the same course name or id as current exist course"
+}

@@ -1,0 +1,18 @@
+{
+  "development": {
+    "username": "root",
+    "password": "ROOT",
+    "database": "SHUKKETSU_BUGYO",
+    "host": "localhost",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "docker": {
+    "username": "root",
+    "password": "ROOT",
+    "database": "SHUKKETSU_BUGYO",
+    "host": "db",
+    "port": 3306,
+    "dialect": "mysql"
+  }
+}

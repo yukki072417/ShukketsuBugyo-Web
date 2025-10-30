@@ -1,0 +1,17 @@
+.navbar{
+    background-color: #4B87FF;
+    height: 100px;
+}
+#brand{
+    color: white;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 660px) {
+
+    #brand{
+        font-size: 18px;
+    }
+
+}

@@ -1,0 +1,19 @@
+{
+    "course_settings_title": "Course Settings",
+    "course_settings": "Course Settings",
+    "teacher_settings": "Teacher Settings (Only for managers)",
+    "period_settings": "Period Settings",
+    "student_settings": "Student Settings",
+    "edit_modal_title": "Edit Course",
+    "edit_modal_course_id": "Course ID",
+    "edit_modal_course_name": "Course Name",
+    "edit_modal_course_name_en": "Course Name (English)",
+    "edit_modal_close": "Close",
+    "edit_modal_save": "Save",
+    "edit_modal_empty": "You cannot set empty values",
+    "edit_modal_duplicate": "You cannot set the same course name or id as current exist course",
+    "no_courses": "No courses",
+    "add_course": "New course",
+    "edit_modal_delete": "Delete",
+    "class_settings": "Classes Settings"
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="{{LANGUAGE}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{LESSON_NAME}} - {{ATTENDANCE_STATISTICS}}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #007bff;
+        }
+
+        .lesson-title {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .page-title {
+            font-size: 1.8rem;
+            color: #6c757d;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        .print-date {
+            font-size: 0.9rem;
+            color: #868e96;
+            font-style: italic;
+        }
+
+        .statistics-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .stat-icon {
+            font-size: 3rem;
+            margin-right: 20px;
+        }
+
+        .stat-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #495057;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 4px solid #007bff;
+        }
+
+        .attendance-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        .table-container {
+            max-height: 70vh;
+            overflow-y: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .attendance-table thead {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+        }
+
+        .attendance-table th,
+        .attendance-table td {
+            padding: 8px 12px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+            font-size: 0.9rem;
+        }
+
+        .attendance-table th {
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .attendance-table tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .attendance-table td:first-child {
+            font-weight: 600;
+            color: #007bff;
+        }
+
+        .status-pass {
+            color: #28a745;
+            font-weight: 600;
+        }
+
+        .status-fail {
+            color: #dc3545;
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .container {
+                box-shadow: none;
+                max-width: none;
+                margin: 0;
+                padding: 15px;
+            }
+            
+            .stat-card {
+                box-shadow: none;
+                border: 1px solid #dee2e6;
+            }
+            
+            .attendance-table {
+                box-shadow: none;
+                border: 1px solid #dee2e6;
+                max-height: none;
+                overflow: visible;
+            }
+            
+            .table-container {
+                max-height: none;
+                overflow: visible;
+                box-shadow: none;
+            }
+            
+            .attendance-table th {
+                position: static;
+            }
+            
+            .statistics-overview {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="lesson-title">{{LESSON_NAME}}</h1>
+            <h2 class="page-title">{{ATTENDANCE_STATISTICS}}</h2>
+            <div class="print-date">{{PRINT_DATE}}</div>
+        </header>
+
+        <section class="statistics-overview">
+            <div class="stat-card">
+                <div class="stat-icon">📚</div>
+                <div class="stat-content">
+                    <h3>{{TOTAL_LESSONS}}</h3>
+                    <p class="stat-value">{{LESSON_COUNT}} {{TIMES}}</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <div class="stat-content">
+                    <h3>{{AVERAGE_ATTENDANCE_RATE}}</h3>
+                    <p class="stat-value">{{AVERAGE_RATE}}%</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="attendance-table-section">
+            <h3 class="section-title">{{STUDENT_ATTENDANCE_STATUS}}</h3>
+            <div class="table-container">
+                <table class="attendance-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 15%;">{{STUDENT_ID}}</th>
+                            <th style="width: 15%;">{{ATTENDANCE_COUNT}}</th>
+                            <th style="width: 15%;">{{TOTAL_LESSONS}}</th>
+                            <th style="width: 25%;">{{ATTENDANCE_RATE}}</th>
+                            <th style="width: 30%;">{{PROMOTION_STATUS}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{STUDENT_ROWS}}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Generated by ShukketsuBugyo System</p>
+        </footer>
+    </div>
+</body>
+</html>
